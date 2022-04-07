@@ -1,0 +1,55 @@
+@import "../../global.scss";
+
+.cart {
+	padding: 20px 0;
+	background-color: #e8f0fb;
+	min-height: 90vh;
+	.cart-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.cart-total {
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		background-color: white;
+		width: 500px;
+		padding: 10px 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include mobile {
+			width: 320px;
+			padding: 5px 40px;
+		}
+		button {
+			outline: none;
+			border: none;
+			padding: 10px 15px;
+			border-radius: 8px;
+			background-color: #00bcd4;
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 500;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				background-color: #00a3b4;
+			}
+			cursor: pointer;
+		}
+	}
+}
+
+.empty-cart {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+}
+a {
+	text-decoration: none;
+	color: #0070f3;
+}

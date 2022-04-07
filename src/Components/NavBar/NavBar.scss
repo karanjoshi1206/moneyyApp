@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+	background-color: #e8f0fb;
+	border-bottom: 1px solid #e5e5e5;
+	@include mobile {
+		padding: 5px;
+	}
+	img {
+		width: 160px;
+		object-fit: cover;
+	}
+}
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	li {
+		list-style: none;
+		a {
+			text-decoration: none;
+			color: inherit;
+			margin-right: 50px;
+			font-size: 18px;
+			@include mobile {
+				margin-right: 20px;
+			}
+			@include smallMobile {
+				margin-right: 10px;
+			}
+		}
+	}
+	.selected {
+		color: #0070f3;
+	}
+}

@@ -1,0 +1,68 @@
+@import "../../global.scss";
+
+.card {
+	height: 400px;
+	width: 380px;
+	border-radius: 16px;
+	margin: 20px;
+	padding: 30px;
+	background-color: #ffffffc4;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0px 0px 10px #cde2ff;
+
+	@include smallMobile {
+		width: 300px;
+	}
+	.card-image {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 160px;
+			height: 160px;
+			border-radius: 8px 8px 0 0;
+			object-fit: contain;
+			border-radius: 8px;
+		}
+	}
+	.card-content {
+		.card-title {
+			h3 {
+				font-size: 20px;
+				font-weight: 500;
+			}
+		}
+		.card-price {
+			h3 {
+				font-size: 22px;
+				color: #00a3b4;
+				font-weight: normal;
+			}
+		}
+		.card-description {
+			font-size: 14px;
+		}
+	}
+	.card-button {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		button {
+			outline: none;
+			border: none;
+			padding: 10px 15px;
+			border-radius: 8px;
+			background-color: #00bcd4;
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 500;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				background-color: #00a3b4;
+			}
+			cursor: pointer;
+		}
+	}
+	// &:hover {
+	// 	transform: scale(1.05);
+	// }
+}
